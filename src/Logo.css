@@ -1,0 +1,9 @@
+.Tilt
+{
+display: flex;
+justify-content: center;/*align horizontally*/
+align-items: center;/*align vertcally*/
+ background:  linear-gradient(to left, #33ccff 0%, #ff99cc 100%);
+ box-shadow: 0.3em 0.3em 0.5em  ;
+
+}
