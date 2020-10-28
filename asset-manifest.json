@@ -1,14 +1,16 @@
 {
   "files": {
     "main.css": "/Smart/static/css/main.2ede3ac0.chunk.css",
-    "main.js": "/Smart/static/js/main.2b3de913.chunk.js",
-    "main.js.map": "/Smart/static/js/main.2b3de913.chunk.js.map",
+    "main.js": "/Smart/static/js/main.8cb97f7b.chunk.js",
+    "main.js.map": "/Smart/static/js/main.8cb97f7b.chunk.js.map",
     "runtime-main.js": "/Smart/static/js/runtime-main.6720f2b3.js",
     "runtime-main.js.map": "/Smart/static/js/runtime-main.6720f2b3.js.map",
     "static/css/2.31461e4f.chunk.css": "/Smart/static/css/2.31461e4f.chunk.css",
     "static/js/2.268ac546.chunk.js": "/Smart/static/js/2.268ac546.chunk.js",
     "static/js/2.268ac546.chunk.js.map": "/Smart/static/js/2.268ac546.chunk.js.map",
     "index.html": "/Smart/index.html",
+    "service-worker.js": "/Smart/service-worker.js",
+    "service-worker.js.map": "/Smart/service-worker.js.map",
     "static/css/2.31461e4f.chunk.css.map": "/Smart/static/css/2.31461e4f.chunk.css.map",
     "static/css/main.2ede3ac0.chunk.css.map": "/Smart/static/css/main.2ede3ac0.chunk.css.map",
     "static/js/2.268ac546.chunk.js.LICENSE.txt": "/Smart/static/js/2.268ac546.chunk.js.LICENSE.txt"
@@ -18,6 +20,6 @@
     "static/css/2.31461e4f.chunk.css",
     "static/js/2.268ac546.chunk.js",
     "static/css/main.2ede3ac0.chunk.css",
-    "static/js/main.2b3de913.chunk.js"
+    "static/js/main.8cb97f7b.chunk.js"
   ]
 }
