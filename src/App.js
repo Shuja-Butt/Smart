@@ -31,7 +31,7 @@ class App extends React.Component
 		this.state={
 		input:'',
 		image:'',
-     box:{},
+     box:[],
      location:'Signin',
      user:{
      name:'',
@@ -76,7 +76,7 @@ this.setState({user:{rank:rank,
     {
     this.setState({input:''});
     this.setState({image:''});
-    this.setState({box:{}}); 
+    this.setState({box:[]}); 
   }
 
 
@@ -127,21 +127,35 @@ this.setState({user:{rank:rank,
 
   getBox=(response)=>
   {
-     let values=(response.outputs[0].data.regions[0].region_info.bounding_box);
+
+    // let values=(response.outputs[0].data.regions[0].region_info.bounding_box);
+    let values = response.outputs[0].data.regions.map(data=>{
+
+       return data.region_info.bounding_box;
+     })
       let imageData=document.getElementById('myImg');
       let height=Number(imageData.height);
      let width=Number(imageData.width);
-console.log(height,"  ",width);
-const box={
-    leftCol:values.left_col*width,
-    topRow : values.top_row*height,
-  rightCol:width-(values.right_col*width),
-bottomRow:height-(values.bottom_row*height),
+      console.log(height,"  ",width);
 
-}
- console.log(box.rightCol);
+   values=values.map(val=>{
+         return {
+          leftCol:val.left_col*width,
+          topRow : val.top_row*height,
+          rightCol:width-(val.right_col*width),
+          bottomRow:height-(val.bottom_row*height),
 
-this.setState({box});
+      }
+     
+
+ 
+
+
+
+   }
+     )
+         this.setState({box:values});
+  
 
   }
 
